@@ -1,0 +1,327 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SistemaAnaliseAcademica - API",
+		"_postman_id": "31595377-6ce7-57d9-ecce-92aed69bb6d9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Activities",
+			"description": "",
+			"item": [
+				{
+					"name": "/activities/average-approved-subjects",
+					"request": {
+						"url": "http://localhost:3000/activities/average-approved-subjects",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/activities/frequency-per-period",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/activities/frequency-per-period?ano_ingresso=2010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"activities",
+								"frequency-per-period"
+							],
+							"query": [
+								{
+									"key": "ano_ingresso",
+									"value": "2010",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evasions",
+			"description": "",
+			"item": [
+				{
+					"name": "/evasions/type-evasion-per-year",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/evasions/type-evasion-per-year?year_entry=2010&type_evasion=formado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"evasions",
+								"type-evasion-per-year"
+							],
+							"query": [
+								{
+									"key": "year_entry",
+									"value": "2010",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "type_evasion",
+									"value": "formado",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/evasions/total-evasion-per-year",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/evasions/total-evasion-per-year?year_entry=2010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"evasions",
+								"total-evasion-per-year"
+							],
+							"query": [
+								{
+									"key": "year_entry",
+									"value": "2010",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/evasions/total-types-evasion-per-year",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/evasions/total-types-evasion-per-year?year_entry=2010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"evasions",
+								"total-types-evasion-per-year"
+							],
+							"query": [
+								{
+									"key": "year_entry",
+									"value": "2010",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"description": "",
+			"item": [
+				{
+					"name": "/courses/frequency-per-period",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/courses/frequency-per-period?year_entry=2014&year=2014&period=1A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses",
+								"frequency-per-period"
+							],
+							"query": [
+								{
+									"key": "year_entry",
+									"value": "2014",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "year",
+									"value": "2014",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "period",
+									"value": "1A",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/courses/situation-per-period",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/courses/situation-per-period?course=fundamentos de sistema de informacao&year_entry=2014&year=2014&period=1A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses",
+								"situation-per-period"
+							],
+							"query": [
+								{
+									"key": "course",
+									"value": "fundamentos de sistema de informacao",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "year_entry",
+									"value": "2014",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "year",
+									"value": "2014",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "period",
+									"value": "1A",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/courses/total-situation-per-period",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/courses/total-situation-per-period?year_entry=2014&year=2014&period=1A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses",
+								"total-situation-per-period"
+							],
+							"query": [
+								{
+									"key": "year_entry",
+									"value": "2014",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "year",
+									"value": "2014",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "period",
+									"value": "1A",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/years-entry",
+			"request": {
+				"url": "http://localhost:3000/years-entry",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/forms-entry",
+			"request": {
+				"url": "http://localhost:3000/forms-entry",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
