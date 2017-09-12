@@ -12,26 +12,15 @@
 			"description": "",
 			"item": [
 				{
-					"name": "/activities/average-approved-subjects",
-					"request": {
-						"url": "http://localhost:3000/activities/average-approved-subjects",
-						"method": "GET",
-						"header": [],
-						"body": {},
-						"description": ""
-					},
-					"response": []
-				},
-				{
 					"name": "/activities/frequency-per-period",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3000/activities/frequency-per-period?ano_ingresso=2010",
+							"raw": "http://localhost:3001/activities/frequency-per-period?ano_ingresso=2010",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"activities",
 								"frequency-per-period"
@@ -63,12 +52,12 @@
 					"name": "/evasions/type-evasion-per-year",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3000/evasions/type-evasion-per-year?year_entry=2010&type_evasion=formado",
+							"raw": "http://localhost:3001/evasions/type-evasion-per-year?year_entry=2010&type_evasion=formado",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"evasions",
 								"type-evasion-per-year"
@@ -100,12 +89,12 @@
 					"name": "/evasions/total-evasion-per-year",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3000/evasions/total-evasion-per-year?year_entry=2010",
+							"raw": "http://localhost:3001/evasions/total-evasion-per-year?year_entry=2010",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"evasions",
 								"total-evasion-per-year"
@@ -131,12 +120,12 @@
 					"name": "/evasions/total-types-evasion-per-year",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3000/evasions/total-types-evasion-per-year?year_entry=2010",
+							"raw": "http://localhost:3001/evasions/total-types-evasion-per-year?year_entry=2010",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"evasions",
 								"total-types-evasion-per-year"
@@ -168,12 +157,12 @@
 					"name": "/courses/frequency-per-period",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3000/courses/frequency-per-period?year_entry=2014&year=2014&period=1A",
+							"raw": "http://localhost:3001/courses/frequency-per-period?year_entry=2014&year=2014&period=1A",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"courses",
 								"frequency-per-period"
@@ -211,12 +200,12 @@
 					"name": "/courses/situation-per-period",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3000/courses/situation-per-period?course=fundamentos de sistema de informacao&year_entry=2014&year=2014&period=1A",
+							"raw": "http://localhost:3001/courses/situation-per-period?course=fundamentos de sistema de informacao&year_entry=2014&year=2014&period=1A",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"courses",
 								"situation-per-period"
@@ -260,12 +249,12 @@
 					"name": "/courses/total-situation-per-period",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3000/courses/total-situation-per-period?year_entry=2014&year=2014&period=1A",
+							"raw": "http://localhost:3001/courses/total-situation-per-period?year_entry=2014&year=2014&period=1A",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"courses",
 								"total-situation-per-period"
@@ -298,13 +287,24 @@
 						"description": ""
 					},
 					"response": []
+				},
+				{
+					"name": "/courses/average-approved-subjects",
+					"request": {
+						"url": "http://localhost:3001/courses/average-approved-subjects",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
 				}
 			]
 		},
 		{
 			"name": "/years-entry",
 			"request": {
-				"url": "http://localhost:3000/years-entry",
+				"url": "http://localhost:3001/years-entry",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -315,7 +315,7 @@
 		{
 			"name": "/forms-entry",
 			"request": {
-				"url": "http://localhost:3000/forms-entry",
+				"url": "http://localhost:3001/forms-entry",
 				"method": "GET",
 				"header": [],
 				"body": {},
