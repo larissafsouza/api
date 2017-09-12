@@ -18,7 +18,10 @@ db.once('open', function() {
 });
 
 
-var index = require('./routes/index');
+var routesActivities = require('./modules/activities/routes');
+var routesCourses = require('./modules/courses/routes');
+var routesEvasions = require('./modules/evasions/routes');
+var routes = require('./routes/routes');
 var users = require('./routes/users');
 
 var app = express();
@@ -51,7 +54,10 @@ app.use(function(req,res,next){
     next();
 });
 
-app.use('/', index);
+app.use('/', routes);
+app.use('/', routesActivities);
+app.use('/', routesCourses);
+app.use('/', routesEvasions);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
