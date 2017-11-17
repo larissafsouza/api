@@ -17,8 +17,8 @@ var academicActivitySchema = new Schema({
   carga_horario_teoria: { type: Number, required: false },
   forma_ingresso: { type: String, required: true },
   ano_ingresso: { type: Number, required: true },
-}, {collection: 'atividades_academica_sistemasdeinformacao'});
+}, {collection: 'atividades_academica_sistemas_de_informacao'});
 
-var academicActivity = mongoose.model('atividades_academica_sistemasdeinformacao', academicActivitySchema);
+var academicActivity = mongoose.model('atividades_academica_sistemas_de_informacao', academicActivitySchema);
 
 module.exports = academicActivity;
